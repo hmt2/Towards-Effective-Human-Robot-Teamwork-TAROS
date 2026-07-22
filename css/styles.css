@@ -147,6 +147,11 @@ a { color: var(--color-primary-dark); }
   margin-bottom: 0.8rem;
 }
 
+.eyebrow a {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
 .hero h1 {
   font-size: clamp(2rem, 4vw, 3rem);
   margin: 0 0 1.2rem;
@@ -157,6 +162,12 @@ a { color: var(--color-primary-dark); }
   margin: 0 auto 2rem;
   color: var(--color-text-muted);
   font-size: 1.1rem;
+}
+
+.hero-meta {
+  font-weight: 600;
+  color: var(--color-text);
+  margin: -1rem 0 2rem;
 }
 
 .hero-actions {
@@ -226,6 +237,10 @@ a { color: var(--color-primary-dark); }
   margin-top: 1.5rem;
 }
 
+.card-grid-single {
+  grid-template-columns: minmax(220px, 320px);
+}
+
 .card {
   background: var(--color-bg-alt);
   border: 1px solid var(--color-border);
@@ -272,23 +287,6 @@ a { color: var(--color-primary-dark); }
 }
 
 .section-alt .schedule-table th { background: var(--color-bg-alt); }
-
-/* Participants */
-.participant-list {
-  columns: 2;
-  column-gap: 2.5rem;
-  padding-left: 1.2rem;
-  margin-top: 1.5rem;
-}
-
-.participant-list li {
-  margin-bottom: 0.6rem;
-  break-inside: avoid;
-}
-
-@media (max-width: 640px) {
-  .participant-list { columns: 1; }
-}
 
 /* Organisers */
 .organiser-grid {
