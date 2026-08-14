@@ -238,7 +238,12 @@ a { color: var(--color-primary-dark); }
 }
 
 .card-grid-single {
-  grid-template-columns: minmax(220px, 320px);
+  grid-template-columns: minmax(220px, 480px);
+}
+
+.keynote-card .keynote-bio,
+.keynote-card .keynote-abstract {
+  margin-top: 1rem;
 }
 
 .card {
@@ -339,6 +344,8 @@ a { color: var(--color-primary-dark); }
 .organiser .card-affiliation { text-align: center; }
 
 .organiser p:last-child { font-size: 0.95rem; color: var(--color-text-muted); }
+
+.organiser p.todo { color: var(--color-accent); }
 
 /* CTA */
 .cta-section {
