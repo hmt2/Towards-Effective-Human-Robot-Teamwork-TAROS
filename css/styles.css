@@ -71,18 +71,13 @@ a { color: var(--color-primary-dark); }
 .nav-brand {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-family: Georgia, serif;
-  font-weight: 700;
-  font-size: 1.1rem;
   text-decoration: none;
-  color: var(--color-text);
 }
 
 .nav-logo {
-  width: 28px;
-  height: 28px;
-  flex-shrink: 0;
+  height: 38px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
@@ -374,14 +369,24 @@ a { color: var(--color-primary-dark); }
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
-  flex-wrap: wrap;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
   margin-bottom: 1.5rem;
 }
 
+.footer-logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 32px;
+}
+
 .footer-logos img {
-  height: 40px;
+  max-width: 100%;
+  max-height: 100%;
   width: auto;
+  height: auto;
   display: block;
 }
 
