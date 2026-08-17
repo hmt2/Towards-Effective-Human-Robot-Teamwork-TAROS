@@ -271,7 +271,7 @@ a { color: var(--color-primary-dark); }
 /* Schedule table */
 .table-wrap {
   overflow-x: auto;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .schedule-table {
@@ -282,9 +282,10 @@ a { color: var(--color-primary-dark); }
 
 .schedule-table th, .schedule-table td {
   text-align: left;
-  padding: 0.45rem 1rem;
+  padding: 0.25rem 1rem;
   border-bottom: 1px solid var(--color-border);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  line-height: 1.3;
 }
 
 .schedule-table th {
@@ -379,8 +380,16 @@ a { color: var(--color-primary-dark); }
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 110px;
-  height: 40px;
+}
+
+.footer-logo-box--manchester {
+  width: 130px;
+  height: 64px;
+}
+
+.footer-logo-box--taros {
+  width: 130px;
+  height: 36px;
 }
 
 .footer-logos img {
