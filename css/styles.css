@@ -3,26 +3,14 @@
   --color-bg-alt: #f4f6f9;
   --color-text: #1c2430;
   --color-text-muted: #566072;
-  --color-primary: #1f4e8c;
-  --color-primary-dark: #163a68;
-  --color-accent: #d97706;
+  --color-primary: #660099;
+  --color-primary-dark: #4c0073;
+  --color-accent: #ffcc33;
+  --color-accent-text: #8a6d00;
   --color-border: #e2e6ec;
   --max-width: 1080px;
   --radius: 10px;
   font-size: 16px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: #12161d;
-    --color-bg-alt: #1a202b;
-    --color-text: #e7ebf1;
-    --color-text-muted: #a6b0c2;
-    --color-primary: #6ea3e0;
-    --color-primary-dark: #8fb8ea;
-    --color-accent: #f0a94e;
-    --color-border: #2a3140;
-  }
 }
 
 * { box-sizing: border-box; }
@@ -60,7 +48,7 @@ h2 {
 a { color: var(--color-primary-dark); }
 
 .todo {
-  color: var(--color-accent);
+  color: var(--color-accent-text);
   font-weight: 600;
 }
 
@@ -81,11 +69,20 @@ a { color: var(--color-primary-dark); }
 }
 
 .nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-family: Georgia, serif;
   font-weight: 700;
   font-size: 1.1rem;
   text-decoration: none;
   color: var(--color-text);
+}
+
+.nav-logo {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
 }
 
 .nav-links {
@@ -175,6 +172,14 @@ a { color: var(--color-primary-dark); }
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.hero-illustration {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  margin: 3rem auto 0;
 }
 
 .btn {
@@ -345,7 +350,7 @@ a { color: var(--color-primary-dark); }
 
 .organiser p:last-child { font-size: 0.95rem; color: var(--color-text-muted); }
 
-.organiser p.todo { color: var(--color-accent); }
+.organiser p.todo { color: var(--color-accent-text); }
 
 /* CTA */
 .cta-section {
@@ -364,6 +369,21 @@ a { color: var(--color-primary-dark); }
 }
 
 .footer-organisers { margin-top: 0.3rem; }
+
+.footer-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.footer-logos img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
 
 /* Mobile nav */
 @media (max-width: 800px) {
