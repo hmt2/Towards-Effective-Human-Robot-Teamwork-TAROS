@@ -238,7 +238,13 @@ a { color: var(--color-primary-dark); }
 }
 
 .card-grid-single {
-  grid-template-columns: minmax(220px, 480px);
+  grid-template-columns: minmax(220px, 720px);
+}
+
+.keynote-card .keynote-title {
+  text-align: center;
+  color: var(--color-text);
+  margin-top: 0.4rem;
 }
 
 .keynote-card .keynote-bio,
