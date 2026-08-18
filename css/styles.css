@@ -242,14 +242,22 @@ a { color: var(--color-primary-dark); }
 }
 
 .keynote-card .keynote-title {
-  text-align: center;
   color: var(--color-text);
-  margin-top: 0.4rem;
+  margin: 0;
+}
+
+.keynote-label {
+  margin: 1.4rem 0 0.3rem;
+  font-family: Georgia, serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-primary);
 }
 
 .keynote-card .keynote-bio,
 .keynote-card .keynote-abstract {
-  margin-top: 1rem;
+  margin: 0;
 }
 
 .card {
@@ -328,6 +336,12 @@ a { color: var(--color-primary-dark); }
   font-family: Georgia, serif;
   font-weight: 700;
   font-size: 1.4rem;
+}
+
+.organiser-photo--large {
+  width: 160px;
+  height: 160px;
+  font-size: 2.2rem;
 }
 
 .organiser-photo::before {
