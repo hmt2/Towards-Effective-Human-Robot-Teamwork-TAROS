@@ -317,6 +317,11 @@ a { color: var(--color-primary-dark); }
   margin-top: 1.5rem;
 }
 
+.organiser-grid--secondary {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 328px));
+  justify-content: center;
+}
+
 .organiser {
   background: var(--color-bg);
   border: 1px solid var(--color-border);
