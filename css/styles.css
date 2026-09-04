@@ -311,6 +311,36 @@ a { color: var(--color-primary-dark); }
 
 .section-alt .schedule-table th { background: var(--color-bg-alt); }
 
+.schedule-row--expanded td {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  vertical-align: top;
+}
+
+.poster-order {
+  margin: 0.6rem 0 0;
+  padding-left: 1.3rem;
+}
+
+.poster-order li {
+  margin-bottom: 1rem;
+}
+
+.poster-order li:last-child {
+  margin-bottom: 0;
+}
+
+.poster-title {
+  margin: 0;
+  font-weight: 600;
+}
+
+.poster-authors {
+  margin: 0.15rem 0 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
 /* Organisers */
 .organiser-grid {
   display: grid;
